@@ -8,20 +8,7 @@ public class Mu : Covid19
 
     private void Awake()
     {
-        initiateProperty(20, "Gama");
+        initiateProperty(20, "mu");
     }
-    private void Start()
-    {
-
-        ShowInformation();
-    }
-    public override void Infect(string animal)
-    {
-
-        base.Infect(animal);
-    }
-    public override void Infect(string people, int age)
-    {
-        base.Infect(people, age);
-    }
+  
 }

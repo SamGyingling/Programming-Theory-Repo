@@ -7,23 +7,12 @@ public class Delta : Covid19
 
     private void Awake()
     {
-       this.initiateProperty(20, "Delta");
+      initiateProperty(20, "Delta");
     }
-    private void Start()
+    
+    public override void OnclickPrintInfo()
     {
-        base.ShowInformation();
-        
-    }
-    public override void Infect(string animal)
-    {
-
-        base.Infect(animal);
-    }
-    public override void Infect(string people, int age)
-    {
-
-
-
-        base.Infect(people, age);
+      
+        GameManager.Instance.printInfo("I will do something different");
     }
 }
